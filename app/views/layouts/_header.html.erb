@@ -4,20 +4,20 @@
 				<a href="index.html"><img src="/assets/logo.png" alt="LOGO"></a>
 			</div>
 			<ul id="navigation">
-				<li class="selected">
-					<a href="index.html">Home</a>
+				<li class=<%="selected" if params[:action]=="index"%>>
+					<%= link_to "Home",root_path%>
 				</li>
-				<li>
-					<a href="sivanmalai.html">Sivanmalai</a>
+				<li class=<%="selected" if params[:action]=="sivanmalai"%>>
+					<%= link_to "Sivanmalai",sivanmalai_path%>
 				</li>
-				<li>
-					<a href="aboutus.html">About Us</a>
+				<li class=<%="selected" if params[:action]=="aboutus"%>>
+					<%= link_to "About Us",aboutus_path%>
 				</li>
-				<li>
-					<a href="gallery.html">Gallery</a>
+				<li class=<%="selected" if params[:action]=="gallery"%>>
+					<%= link_to "Gallery",gallery_path%>
 				</li>
-				<li>
-					<a href="contact.html">Contact</a>
+				<li class=<%="selected" if params[:action]=="contact"%>>
+					<%= link_to "Contact",contact_path%>
 				</li>
 			</ul>
 		</div>
