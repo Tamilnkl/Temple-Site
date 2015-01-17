@@ -204,7 +204,7 @@ img {
 #main {
 	float: left;
 	min-height: 580px; /*840*/
-	width: 620px;
+	width: 70%;
 }
 #main_gallery {
 	float: left;
@@ -232,7 +232,7 @@ img {
 /** SIDEBAR **/
 #sidebar {
 	float: right;
-	width: 278px;
+	width: 30%;
 	height: 500px;
 }
 #sidebar h3 {
