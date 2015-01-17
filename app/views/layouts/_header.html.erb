@@ -1,24 +1,24 @@
 <div id="header">
-		<div>
-			<div id="logo">
-				<a href="index.html"><img src="/assets/logo.png" alt="LOGO"></a>
-			</div>
-			<ul id="navigation">
-				<li class=<%="selected" if params[:action]=="index"%>>
-					<%= link_to "Home",root_path%>
-				</li>
-				<li class=<%="selected" if params[:action]=="sivanmalai"%>>
-					<%= link_to "Sivanmalai",sivanmalai_path%>
-				</li>
-				<li class=<%="selected" if params[:action]=="aboutus"%>>
-					<%= link_to "About Us",aboutus_path%>
-				</li>
-				<li class=<%="selected" if params[:action]=="gallery"%>>
-					<%= link_to "Gallery",gallery_path%>
-				</li>
-				<li class=<%="selected" if params[:action]=="contact"%>>
-					<%= link_to "Contact",contact_path%>
-				</li>
-			</ul>
+	<div>
+		<div id="logo">
+			<a href="index.html"><img src="/assets/logo.png" alt="LOGO"></a>
 		</div>
+		<ul id="navigation">
+			<li class=<%="selected" if params[:action]=="index"%>>
+				<%= link_to "Home",root_path%>
+			</li>
+			<li class=<%="selected" if params[:action]=="sivanmalai"%>>
+				<%= link_to "Sivanmalai",sivanmalai_path%>
+			</li>
+			<li class=<%="selected" if params[:action]=="aboutus"%>>
+				<%= link_to "About Us",aboutus_path%>
+			</li>
+			<li class=<%="selected" if params[:action]=="gallery"%>>
+				<%= link_to "Gallery",gallery_path%>
+			</li>
+			<li class=<%="selected" if params[:action]=="contact"%>>
+				<%= link_to "Contact",contact_path%>
+			</li>
+		</ul>
 	</div>
+</div>

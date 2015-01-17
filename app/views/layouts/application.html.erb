@@ -2,8 +2,6 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-    <meta name="description" content="Images and Poems of the lord murugan from the sri arul murugan trust sivanmalai">
-    <meta name="google-site-verification" content="BikwqPTCnaUlpUnQ4DmHBupuPvJXVD5OtCEYWIycQ_4" />
 	<title>Sri Sivanamalai Murugan</title>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -14,6 +12,7 @@
 	<div id="contents">
 		<%= yield %>
     </div>
+    <audio autoplay="autoplay" loop><source src="/audios/Azhagellam.mp3" type="audio/mpeg"></audio>
    <%=render "layouts/footer"%>
 </body>
 </html>

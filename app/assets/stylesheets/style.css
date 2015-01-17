@@ -204,9 +204,19 @@ img {
 #main {
 	float: left;
 	min-height: 580px; /*840*/
+	width: 620px;
+}
+#main_gallery {
+	float: left;
+	min-height: 580px; /*840*/
 	width: 100%;
 }
-#main ul {
+#main_gallery ul li {
+	display: inline-block;
+	margin-bottom: 24px;
+	height: 400px;
+}
+#main ul, #main_gallery ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -214,9 +224,8 @@ img {
 #main ul li {
 	display: inline-block;
 	margin-bottom: 24px;
-	height: 400px;
 }
-#main ul li img {
+#main ul li img ,#main_gallery ul li img {
 	float: left;
 	margin-right: 20px;
 }
@@ -591,3 +600,7 @@ img {
 }
 
 #sidebar p{color:#A71969;}
+
+.carousel ul li{
+	width:320px !important;
+}
