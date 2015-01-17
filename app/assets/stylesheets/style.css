@@ -204,7 +204,7 @@ img {
 #main {
 	float: left;
 	min-height: 580px; /*840*/
-	width: 620px;
+	width: 100%;
 }
 #main ul {
 	list-style: none;
@@ -214,6 +214,7 @@ img {
 #main ul li {
 	display: inline-block;
 	margin-bottom: 24px;
+	height: 400px;
 }
 #main ul li img {
 	float: left;
