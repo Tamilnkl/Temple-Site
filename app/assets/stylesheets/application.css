@@ -12,6 +12,7 @@
  *
  *= require_self
  *= require bootstrap.min
+ *= require one-page-base
  *= require animate
  *= require prettyPhoto
  *= require font-awesome
