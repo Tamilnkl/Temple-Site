@@ -24,4 +24,7 @@ test:
 
 production:
   <<: *default
+  database: pkv_bvp_local
+  username: postgres
+  password: postgres
  # database: db/production.sqlite3

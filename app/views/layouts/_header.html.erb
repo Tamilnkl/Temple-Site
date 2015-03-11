@@ -1,24 +1,35 @@
-<div id="header">
-	<div>
-		<div id="logo">
-			<a href="index.html"><img src="/assets/logo.png" alt="LOGO"></a>
-		</div>
-		<ul id="navigation">
-			<li class=<%="selected" if params[:action]=="index"%>>
-				<%= link_to "Home",root_path%>
-			</li>
-			<li class=<%="selected" if params[:action]=="sivanmalai"%>>
-				<%= link_to "Sivanmalai",sivanmalai_path%>
-			</li>
-			<li class=<%="selected" if params[:action]=="aboutus"%>>
-				<%= link_to "About Us",aboutus_path%>
-			</li>
-			<li class=<%="selected" if params[:action]=="gallery"%>>
-				<%= link_to "Gallery",gallery_path%>
-			</li>
-			<li class=<%="selected" if params[:action]=="contact"%>>
-				<%= link_to "Contact",contact_path%>
-			</li>
-		</ul>
-	</div>
-</div>
+<header id="home" class="intro">
+  <div class="overlay-dark">
+      <div class="intro-body">
+              <div id="myCarousel" class="carousel slide">
+			  <div class="carousel-inner">
+			  <div class="item active"><img src="/assets/paris.jpg" alt="Slide1" title="">
+			  <div class="container text-center">
+			  <div class="carousel-caption text-center">
+			    <h1>Working as One For <br>the Good of Many</h1>
+			  </div>
+			  </div>
+			  </div>
+			  <div class="item"><img src="/assets/srimurugan.jpg" alt="Slide2">
+			  <div class="container">
+			  <div class="carousel-caption">
+			   
+			  </div>
+			  </div>
+			  </div>
+			  <div class="item"><img src="/assets/temple.jpg" alt="Slide3">
+			  <div class="container"><div class="carousel-caption">
+			  
+			  </div>
+			  </div>
+			  </div>
+			  </div>
+			  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="fa fa-chevron-left fa-2x"></span></a><a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="fa fa-chevron-right fa-2x"></span></a></div><!-- /end carousel  -->
+                      </div><!-- /end carousel container-->
+              </div>
+          </div>
+      
+       <!-- fundraising bar -->
+         
+  </div></div>
+</header>

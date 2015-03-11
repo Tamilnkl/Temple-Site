@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require bootstrap.min
+//= require modernizr
+//= require wow
+//= require jquery.prettyPhoto
+//= require jquery.tinyscrollbar
+//= require jquery.countTo
+//= require moment
+//= require act

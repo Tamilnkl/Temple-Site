@@ -1,15 +1,13 @@
-<div id="adbox">
-	<div>
-		<img src="/assets/home-murugan.jpg" alt="Img" class="home-image">
-		<div class="details">
-		   <img src="/assets/home-song.jpg" alt="Img">	
-		</div>
-	</div>
-	<span class="footer"></span>
-</div>
+<%= render partial: "about"%>
+<%= render partial: "process"%>           
+<%= render partial: "volunteer"%>
+<%= render partial: "gallery"%>
+<%= render partial: "get_involved"%>
+<%= render partial: "contact"%>
+<script type="text/javascript">
+	new WOW().init();
 
-	
-
-<style type="text/css">
-.home-image{width:458px;margin-left: -49px !important;margin-top: 87px !important;}
-</style>
+	$('#myCarousel').carousel({
+		interval:   4000
+	});
+</script>
