@@ -43,3 +43,5 @@ gem 'rails_admin'
 gem "paperclip", "~> 4.2"
 gem 'aws-sdk'
 
+gem 'rails_12factor'
+
