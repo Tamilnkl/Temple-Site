@@ -3,8 +3,8 @@
 		<div class="intro-body">
 			<div id="myCarousel" class="carousel slide">
 				<div class="carousel-inner">
-					<% Image.god.each do |image| %>
-						<div class="item">
+					<% Image.god.each_with_index do |image,i| %>
+						<div class="item <%= 'active' if i==0 %>">
 							<img src="<%= image.big_image %>" alt="Slide3">  
 						</div>
 					<% end %>
