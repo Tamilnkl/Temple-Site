@@ -2,7 +2,7 @@ class Image < ActiveRecord::Base
 	has_attached_file :pics, :styles => { :medium => "300x300>", :thumb => "100x100>", :big => "1351x900!" }, :default_url => "/images/:style/missing.png"
     validates_attachment_content_type :pics, :content_type => /\Aimage\/.*\Z/
 
-    IMAGETYPE = ["God","Sivanmalai","Person"]
+    IMAGETYPE = ["god","sivanmalai","person"]
     enum image_type: IMAGETYPE
 
     validates :image_type,presence: true
