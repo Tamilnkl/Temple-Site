@@ -41,7 +41,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 gem 'rails_admin'
 gem "paperclip", "~> 4.2"
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 
 gem 'rails_12factor'
 
