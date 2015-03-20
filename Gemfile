@@ -44,4 +44,5 @@ gem "paperclip", "~> 4.2"
 gem 'aws-sdk', '< 2.0'
 
 gem 'rails_12factor'
+gem 'puma'
 
