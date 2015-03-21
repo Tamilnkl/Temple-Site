@@ -21,6 +21,9 @@ RailsAdmin.config do |config|
     configure :image_type do
       partial "image_type"
     end
+    configure :image_id do
+      partial "image_id"
+    end
   end
 
   config.actions do
