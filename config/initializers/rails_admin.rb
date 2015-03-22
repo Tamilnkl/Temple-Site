@@ -18,11 +18,24 @@ RailsAdmin.config do |config|
   config.included_models = ["Image"]
 
   config.model 'Image' do
+    exclude_fields :images
+
     configure :image_type do
       partial "image_type"
     end
-    configure :image_id do
-      partial "image_id"
+
+    field :image do
+      label "Select Parent image"
+      associated_collection_cache_all false  # REQUIRED if you want to SORT the list as below
+      associated_collection_scope do
+        # bindings[:object] & bindings[:controller] are available, but not in scope's block!
+        image = bindings[:object]
+        Proc.new { |scope|
+          # scoping all Players currently, let's limit them to the team's league
+          # Be sure to limit if there are a lot of Players and order them by position
+          scope = scope.eligible_parent("sivanmalai","person")
+        }
+      end
     end
   end
 
