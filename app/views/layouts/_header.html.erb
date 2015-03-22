@@ -5,7 +5,7 @@
 				<div class="carousel-inner">
 					<% Image.god.each_with_index do |image,i| %>
 						<div class="item <%= 'active' if i==0 %>">
-							<img src="<%= image.big_image %>" alt="Slide3">  
+							<img src="<%= image.sized_image('big') %>" alt="Slide3">  
 						</div>
 					<% end %>
 				</div>
